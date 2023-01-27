@@ -1,0 +1,45 @@
+{
+  "name": "kirbykot/laravel-distributed-events",
+  "description": "Laravel Distributed Events",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maksim",
+      "email": "2618094@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "ext-json": "*",
+    "ext-amqp": "*",
+    "illuminate/support": "^6|^7|^8|^9",
+    "illuminate/contracts": "^6|^7|^8|^9",
+    "illuminate/events": "^6|^7|^8|^9",
+    "illuminate/console": "^6|^7|^8|^9",
+    "illuminate/bus": "^6|^7|^8|^9",
+    "enqueue/amqp-ext": "^0.10.9"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kirbykot\\DistributedEvents\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kirbykot\\DistributedEvents\\ServiceProvider"
+      ]
+    }
+  }
+}
