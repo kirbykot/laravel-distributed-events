@@ -2,7 +2,7 @@
 
 namespace Kirbykot\DistributedEvents\Listeners;
 
-use Kirbykot\DistributedEvents\Contracts\ShouldDistribute;
+use Kirbykot\DistributedEventsBridge\ShouldDistribute;
 use Kirbykot\PhpDistributedMessages\Distributor;
 
 class DistributeEvent

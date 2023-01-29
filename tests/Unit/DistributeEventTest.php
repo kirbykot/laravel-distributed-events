@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use Kirbykot\DistributedEvents\Contracts\ShouldDistribute;
-use Kirbykot\DistributedEvents\ShouldDistributedTrait;
+use Kirbykot\DistributedEventsBridge\ShouldDistribute;
+use Kirbykot\DistributedEventsBridge\ShouldDistributeTrait;
 use Kirbykot\PhpDistributedMessages\Distributor;
 use Tests\TestCase;
 
@@ -35,7 +35,7 @@ class DistributeEventTest extends TestCase
     private function makeEvent(): ShouldDistribute
     {
         return new class implements ShouldDistribute{
-            use ShouldDistributedTrait;
+            use ShouldDistributeTrait;
             public string $test = 'test';
         };
     }

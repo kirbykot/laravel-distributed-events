@@ -3,7 +3,7 @@
 namespace Kirbykot\DistributedEvents;
 
 use Illuminate\Contracts\Events\Dispatcher;
-use Kirbykot\DistributedEvents\Contracts\ShouldDistribute;
+use Kirbykot\DistributedEventsBridge\ShouldDistribute;
 use Kirbykot\PhpDistributedMessages\Contracts\SubscriptionHandler;
 use Kirbykot\PhpDistributedMessages\Contracts\SubscriptionContextInterface;
 

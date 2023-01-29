@@ -4,7 +4,7 @@ namespace Kirbykot\DistributedEvents;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Kirbykot\DistributedEvents\Console\StartSubscription;
-use Kirbykot\DistributedEvents\Contracts\ShouldDistribute;
+use Kirbykot\DistributedEventsBridge\ShouldDistribute;
 use Kirbykot\DistributedEvents\Listeners\DistributeEvent;
 use Kirbykot\PhpDistributedMessages\MessageFactory;
 use Kirbykot\PhpDistributedMessages\Distributor;
